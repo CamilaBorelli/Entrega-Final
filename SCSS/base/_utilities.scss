@@ -1,0 +1,12 @@
+@mixin titsecundary {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+@mixin parrafo-inicial {
+    margin: 30px;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+}

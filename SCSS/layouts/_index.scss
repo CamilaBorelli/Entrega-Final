@@ -14,7 +14,7 @@
 
 .body,
 .color-de-fondo {
-    background-color: thistle;
+    background-color: $color-fondo-body;
 }
 
 .h1,
@@ -25,14 +25,26 @@
     font-size: 50px;
     font-style: oblique;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    animation: cambioColor 4s infinite;
+
+    @keyframes cambioColor {
+        0% {
+            color: rgb(82, 57, 82);
+        }
+
+        50% {
+            color: rgb(148, 91, 148);
+        }
+
+        100% {
+            color: rgb(83, 57, 83);
+        }
+    }
 }
 
 .parrafo-banner {
-    margin: 30px;
-    padding: 5px;
-    text-align: center;
-    font-size: 18px;
-    font-family: sans-serif;
+    @include parrafo-inicial;
+
 }
 
 p:hover {
