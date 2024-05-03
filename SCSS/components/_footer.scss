@@ -1,9 +1,16 @@
 .container .nav-item {
-    font-size: 18px;
+    display: inline-block;
+    padding: 1px;
+    font-size: 16px;
     background-color: rgba(224, 116, 224, 0.192);
     border-radius: 10px;
     transition: 0.3s;
     border: 1px solid transparent;
+
+    .container ul {
+        display: inline-block;
+    }
+
 
     &:hover {
         background-color: transparent;
