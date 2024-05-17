@@ -28,6 +28,7 @@
     input,
     textarea {
         width: 100%;
+        border-radius: 10px;
     }
 
     button {
@@ -35,6 +36,12 @@
         background-color: rgb(148, 99, 172);
         color: rgb(43, 40, 44);
         border-radius: 10px;
+
+        &:hover {
+            width: 100%;
+            background-color: rgb(189, 146, 211);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        }
     }
 
     ::placeholder {

@@ -1,46 +1,47 @@
-.img-planta {
+.contenedor-especies {
+    display: flex;
+    justify-content:space-evenly;
     width: 100%;
-    object-fit: cover;
-    box-shadow: 5px 5px 5px;
-    flex-grow: 4;
-    flex-basis: 320px;
-    border: 2px solid #000;
-    border-radius: 10px;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    border-radius: 8px;
     overflow: hidden;
-    transition: 0.5s;
 
-    &:hover {
-        transform: scale(1.1);
-        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    .card-especies {
+        width: 300px;
+        margin-bottom: 20px;
+
+
+        .img-planta {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin-right: 10px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            border: 2px solid #000;
+            border-radius: 10px;
+            transition: transform 0.5s, box-shadow 0.5s;
+
+            &:hover {
+                width: 100%;
+                transform: scale(1.1);
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        .parrafo-especies {
+            width: 100%;
+            text-align:justify;
+            padding: 20px;
+            color: rgb(43, 40, 44);
+            background-color: $color-fondop; 
+            border-radius: 10px;
+            border-style: ridge;
+            font-size: 16px;
+            font-family: sans-serif;
+        }
     }
 }
-
-.img-especies {
-    width: 90%;
-    max-width: 1100px;
-    margin: 40px auto;
-    gap: 60px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    height: 100%;
-}
-
-.img-planta {
-    height: 100%;
-}
-
 .img-titulo {
     @include titsecundary;
-}
-
-.parrafo-especies {
-    color: rgb(43, 40, 44);
-    background-color: $color-fondop;
-    border-radius: 10px;
-    border-style: ridge;
-    margin: 50px;
-    padding: 15px;
-    text-align: center;
-    font-size: 18px;
-    font-family: sans-serif;
 }
