@@ -3,21 +3,13 @@
     background-color: rgb(244, 230, 248);
     display: flex;
     justify-content: space-between;
-    align-items: center;
 
-    .menu ul {
-        padding: 10px;
-        width: auto;
-        display: flex;
-        list-style-type: none;
-        text-align: center;
-    }
 
     .menu ul li {
         width: auto;
         display: inline-block;
         margin-right: 10px;
-        text-align: center;
+        text-align: start;
     }
 
     .menu ul li a {
@@ -26,25 +18,34 @@
         color: black;
         display: block;
         padding: 0, 5;
+        text-align: left;
+    }
+
+    .logo {
+        padding: 10px;
     }
 }
 
-.busqueda {
-    display: flex;
-    align-items: center;
+.busqueda form {
+    padding: 10px;
 
     input {
         padding: 5px;
         color: rgb(99, 43, 136);
         border-radius: 0, 5px;
 
+        text {
+            width: 200px;
+        }
+
         button {
             border: none;
             background-color: #9a14a7;
             color: white;
             border-radius: 3px;
-            cursor: pointer;
-        }
 
+        }
     }
+
+
 }
