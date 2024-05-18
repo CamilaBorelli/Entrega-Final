@@ -1,6 +1,6 @@
 .contenedor-especies {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     width: 100%;
     flex-wrap: wrap;
     border: 1px solid #ccc;
@@ -31,10 +31,10 @@
 
         .parrafo-especies {
             width: 100%;
-            text-align:justify;
+            text-align: justify;
             padding: 20px;
             color: rgb(43, 40, 44);
-            background-color: $color-fondop; 
+            background-color: $color-fondop;
             border-radius: 10px;
             border-style: ridge;
             font-size: 16px;
@@ -42,6 +42,8 @@
         }
     }
 }
+
 .img-titulo {
+    padding: 20px;
     @include titsecundary;
 }
